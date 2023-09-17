@@ -17,7 +17,8 @@ defmodule RockeliveryWeb.Router do
   scope "/", RockeliveryWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+
+    get "/", WelcomeController, :index
   end
 
   # Other scopes may use custom stacks.
